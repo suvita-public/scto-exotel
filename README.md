@@ -38,6 +38,8 @@ The *appearance* specifications for calling and SMS are different. Please refer 
 |`calledID`|This is the ExoPhone number (Exotel virtual number) that you want to use for calling. If using a landline ExoPhone, leave the first 0 in the number.|
 |`recording`| This specifies whether calls should be recorded or not. [=1] means yes, calls should be recorded and [=0] means no, calls should not be recorded. Specify recording=1 only if you have IRB approvals for recording calls.|
 |`displaynumber`| This is a security parameter that lets you choose if the respondent number should be displayed to the enumerator or not. When [=0], the respondent number is **not** displayed on the screen. This is only useful when pulling phone numbers from a preloads .csv.|
+|`jsonresponse`| Optional. When [=true] or left blank, the plug-in uses Exotel's `.json` endpoints and stores a structured JSON response in the field. When [=false], it falls back to the older raw response behavior.|
+|`smsheader`| Required when using `type="sms"`. This should be the approved Exotel sender ID / SMS header linked to your account.|
 |`msgBody`| Specify the SurveyCTO field name from where the SMS text needs to be pulled. You can preload the text into the form so that enumerators do not have to type it out.|
 |`type="sms"`| This specifies that the plug-is being used for SMS. Use it exactly as specified here.|
 

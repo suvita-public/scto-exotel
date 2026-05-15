@@ -1,7 +1,7 @@
 {
 	"name" : "Exotel Dialer",
 	"author" : "RK@J-PAL SA",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"supportedFieldTypes": ["text"],
 	"hideDefaultRequiredMessage": false,
 	"hideDefaultConstraintMessage": false
